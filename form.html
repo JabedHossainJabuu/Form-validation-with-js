@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <script defer src="form.js"></script>
+</head>
+<body>
+    <h2>Registration form</h2>
+
+    <div id="error"></div>
+
+    <form id="form" method="GET">
+        <div>
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname" id="fullname" required>
+        </div><br>
+        
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </div><br>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </div><br>
+
+        <div>
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" name="dob" id="dob">
+        </div><br>
+
+        <div>
+            <label for="photo">Choose your photo:</label>
+            <input type="file" name="photo" id="photo">
+        </div><br>
+
+        <div>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="gender" value="male">Male
+            <input type="radio" name="gender" id="gender" value="female">Female
+            <input type="radio" name="gender" id="gender" value="others">Others
+        </div><br>
+
+        <div>
+            <label for="religion">Religion:</label>
+            <input checked type="checkbox" name="religion" id="religion" value="islam">Islam
+            <input type="checkbox" name="religion" id="religion" value="hindu">Hindu
+            <input type="checkbox" name="religion" id="religion" value="christian">Christian
+            <input type="checkbox" name="religion" id="religion" value="buddhist">Buddhist
+        </div><br>
+
+        <div>
+            <label for="department">Department:</label>
+            <select name="department">
+                <option value="swe">SWE</option>
+                <option value="cse" selected>CSE</option>
+                <option value="bba">BBA</option>
+                <option value="eee">EEE</option>
+            </select>
+        </div><br><br>
+
+        <div>
+            <label for="message">Message:</label><br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div><br><br>
+
+        <div>
+            <button type="submit" value="register">Submit</button>
+            <button type="reset" value="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
