@@ -9,7 +9,7 @@ const department=document.getElementById('department')
 const form = document.getElementById('form')
 const errorElement = document.getElementById('error')
 
-form.addEventListener('submit', (e) =>{
+form.addEventListener('submit', e =>{
     let messeges =[]
     if (name.value=='' || name.value==null) {
         messeges.push('Name is required')
@@ -27,4 +27,4 @@ form.addEventListener('submit', (e) =>{
         e.preventDefault()
         errorElement.innerText = messeges.join(', ')
     }
-})
+});
